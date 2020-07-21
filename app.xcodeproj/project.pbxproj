@@ -11,7 +11,39 @@
 		9668004524C2B81F00A7D941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668004424C2B81F00A7D941 /* ViewController.swift */; };
 		9668004724C2B81F00A7D941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9668004624C2B81F00A7D941 /* Assets.xcassets */; };
 		9668004A24C2B81F00A7D941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9668004824C2B81F00A7D941 /* Main.storyboard */; };
+		9668005524C2BB7C00A7D941 /* testc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9668005424C2BB7C00A7D941 /* testc.c */; };
+		96B7CF7824C34F4800CB5420 /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005724C2BF6900A7D941 /* libavcodec.dylib */; };
+		96B7CF7A24C34F4800CB5420 /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005B24C2BF6900A7D941 /* libavdevice.dylib */; };
+		96B7CF7C24C34F4900CB5420 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005D24C2BF6900A7D941 /* libavformat.dylib */; };
+		96B7CF7E24C34F4900CB5420 /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005824C2BF6900A7D941 /* libavutil.dylib */; };
+		96B7CF8124C34FF700CB5420 /* libswresample.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005A24C2BF6900A7D941 /* libswresample.dylib */; };
+		96B7CF8224C34FF700CB5420 /* libswresample.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005A24C2BF6900A7D941 /* libswresample.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96B7CF8324C34FF700CB5420 /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668005C24C2BF6900A7D941 /* libswscale.dylib */; };
+		96B7CF8424C34FF700CB5420 /* libswscale.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005C24C2BF6900A7D941 /* libswscale.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96B7CF8624C353E200CB5420 /* libavcodec.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005724C2BF6900A7D941 /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96B7CF8724C353E400CB5420 /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005B24C2BF6900A7D941 /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96B7CF8824C353E500CB5420 /* libavformat.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005D24C2BF6900A7D941 /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96B7CF8924C353E700CB5420 /* libavutil.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9668005824C2BF6900A7D941 /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96B7CF8524C34FF700CB5420 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96B7CF8824C353E500CB5420 /* libavformat.dylib in Embed Libraries */,
+				96B7CF8924C353E700CB5420 /* libavutil.dylib in Embed Libraries */,
+				96B7CF8224C34FF700CB5420 /* libswresample.dylib in Embed Libraries */,
+				96B7CF8724C353E400CB5420 /* libavdevice.dylib in Embed Libraries */,
+				96B7CF8424C34FF700CB5420 /* libswscale.dylib in Embed Libraries */,
+				96B7CF8624C353E200CB5420 /* libavcodec.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9668003F24C2B81F00A7D941 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +53,30 @@
 		9668004924C2B81F00A7D941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9668004B24C2B81F00A7D941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9668004C24C2B81F00A7D941 /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
+		9668005224C2BB7C00A7D941 /* app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-Header.h"; sourceTree = "<group>"; };
+		9668005324C2BB7C00A7D941 /* testc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testc.h; sourceTree = "<group>"; };
+		9668005424C2BB7C00A7D941 /* testc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testc.c; sourceTree = "<group>"; };
+		9668005724C2BF6900A7D941 /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = app/libs/libavcodec.dylib; sourceTree = "<group>"; };
+		9668005824C2BF6900A7D941 /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = app/libs/libavutil.dylib; sourceTree = "<group>"; };
+		9668005924C2BF6900A7D941 /* libavfilter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.dylib; path = app/libs/libavfilter.dylib; sourceTree = "<group>"; };
+		9668005A24C2BF6900A7D941 /* libswresample.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.dylib; path = app/libs/libswresample.dylib; sourceTree = "<group>"; };
+		9668005B24C2BF6900A7D941 /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = app/libs/libavdevice.dylib; sourceTree = "<group>"; };
+		9668005C24C2BF6900A7D941 /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = app/libs/libswscale.dylib; sourceTree = "<group>"; };
+		9668005D24C2BF6900A7D941 /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = app/libs/libavformat.dylib; sourceTree = "<group>"; };
+		96B7CF4C24C34CEA00CB5420 /* libavformat.58.46.101.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.46.101.dylib; path = app/libs/libavformat.58.46.101.dylib; sourceTree = "<group>"; };
+		96B7CF4D24C34CEA00CB5420 /* libswresample.3.8.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.8.100.dylib; path = app/libs/libswresample.3.8.100.dylib; sourceTree = "<group>"; };
+		96B7CF4E24C34CEA00CB5420 /* libavdevice.58.11.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.11.100.dylib; path = app/libs/libavdevice.58.11.100.dylib; sourceTree = "<group>"; };
+		96B7CF4F24C34CEA00CB5420 /* libavutil.56.55.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.55.100.dylib; path = app/libs/libavutil.56.55.100.dylib; sourceTree = "<group>"; };
+		96B7CF5024C34CEA00CB5420 /* libavfilter.7.86.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.86.100.dylib; path = app/libs/libavfilter.7.86.100.dylib; sourceTree = "<group>"; };
+		96B7CF5124C34CEA00CB5420 /* libavcodec.58.92.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.92.100.dylib; path = app/libs/libavcodec.58.92.100.dylib; sourceTree = "<group>"; };
+		96B7CF5224C34CEA00CB5420 /* libswscale.5.8.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.8.100.dylib; path = app/libs/libswscale.5.8.100.dylib; sourceTree = "<group>"; };
+		96B7CF6224C34EE500CB5420 /* libavformat.58.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.58.dylib; path = app/libs/libavformat.58.dylib; sourceTree = "<group>"; };
+		96B7CF6324C34EE500CB5420 /* libavutil.56.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.56.dylib; path = app/libs/libavutil.56.dylib; sourceTree = "<group>"; };
+		96B7CF6424C34EE500CB5420 /* libavdevice.58.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.58.dylib; path = app/libs/libavdevice.58.dylib; sourceTree = "<group>"; };
+		96B7CF6524C34EE500CB5420 /* libswscale.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.5.dylib; path = app/libs/libswscale.5.dylib; sourceTree = "<group>"; };
+		96B7CF6624C34EE500CB5420 /* libavfilter.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.7.dylib; path = app/libs/libavfilter.7.dylib; sourceTree = "<group>"; };
+		96B7CF6724C34EE500CB5420 /* libswresample.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.3.dylib; path = app/libs/libswresample.3.dylib; sourceTree = "<group>"; };
+		96B7CF6824C34EE500CB5420 /* libavcodec.58.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.58.dylib; path = app/libs/libavcodec.58.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B7CF7824C34F4800CB5420 /* libavcodec.dylib in Frameworks */,
+				96B7CF8324C34FF700CB5420 /* libswscale.dylib in Frameworks */,
+				96B7CF7E24C34F4900CB5420 /* libavutil.dylib in Frameworks */,
+				96B7CF8124C34FF700CB5420 /* libswresample.dylib in Frameworks */,
+				96B7CF7C24C34F4900CB5420 /* libavformat.dylib in Frameworks */,
+				96B7CF7A24C34F4800CB5420 /* libavdevice.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +101,7 @@
 			children = (
 				9668004124C2B81F00A7D941 /* app */,
 				9668004024C2B81F00A7D941 /* Products */,
+				9668005624C2BF6900A7D941 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +118,43 @@
 			children = (
 				9668004224C2B81F00A7D941 /* AppDelegate.swift */,
 				9668004424C2B81F00A7D941 /* ViewController.swift */,
+				9668005324C2BB7C00A7D941 /* testc.h */,
+				9668005424C2BB7C00A7D941 /* testc.c */,
 				9668004624C2B81F00A7D941 /* Assets.xcassets */,
 				9668004824C2B81F00A7D941 /* Main.storyboard */,
 				9668004B24C2B81F00A7D941 /* Info.plist */,
 				9668004C24C2B81F00A7D941 /* app.entitlements */,
+				9668005224C2BB7C00A7D941 /* app-Bridging-Header.h */,
 			);
 			path = app;
+			sourceTree = "<group>";
+		};
+		9668005624C2BF6900A7D941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B7CF6824C34EE500CB5420 /* libavcodec.58.dylib */,
+				96B7CF6424C34EE500CB5420 /* libavdevice.58.dylib */,
+				96B7CF6624C34EE500CB5420 /* libavfilter.7.dylib */,
+				96B7CF6224C34EE500CB5420 /* libavformat.58.dylib */,
+				96B7CF6324C34EE500CB5420 /* libavutil.56.dylib */,
+				96B7CF6724C34EE500CB5420 /* libswresample.3.dylib */,
+				96B7CF6524C34EE500CB5420 /* libswscale.5.dylib */,
+				96B7CF5124C34CEA00CB5420 /* libavcodec.58.92.100.dylib */,
+				96B7CF4E24C34CEA00CB5420 /* libavdevice.58.11.100.dylib */,
+				96B7CF5024C34CEA00CB5420 /* libavfilter.7.86.100.dylib */,
+				96B7CF4C24C34CEA00CB5420 /* libavformat.58.46.101.dylib */,
+				96B7CF4F24C34CEA00CB5420 /* libavutil.56.55.100.dylib */,
+				96B7CF4D24C34CEA00CB5420 /* libswresample.3.8.100.dylib */,
+				96B7CF5224C34CEA00CB5420 /* libswscale.5.8.100.dylib */,
+				9668005724C2BF6900A7D941 /* libavcodec.dylib */,
+				9668005B24C2BF6900A7D941 /* libavdevice.dylib */,
+				9668005924C2BF6900A7D941 /* libavfilter.dylib */,
+				9668005D24C2BF6900A7D941 /* libavformat.dylib */,
+				9668005824C2BF6900A7D941 /* libavutil.dylib */,
+				9668005A24C2BF6900A7D941 /* libswresample.dylib */,
+				9668005C24C2BF6900A7D941 /* libswscale.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +167,7 @@
 				9668003B24C2B81F00A7D941 /* Sources */,
 				9668003C24C2B81F00A7D941 /* Frameworks */,
 				9668003D24C2B81F00A7D941 /* Resources */,
+				96B7CF8524C34FF700CB5420 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -89,12 +184,16 @@
 		9668003724C2B81F00A7D941 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = shimeng;
 				TargetAttributes = {
 					9668003E24C2B81F00A7D941 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -133,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9668005524C2BB7C00A7D941 /* testc.c in Sources */,
 				9668004524C2B81F00A7D941 /* ViewController.swift in Sources */,
 				9668004324C2B81F00A7D941 /* AppDelegate.swift in Sources */,
 			);
@@ -186,6 +286,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -205,7 +306,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -246,6 +347,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -259,6 +361,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -269,17 +372,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJRUY98YQG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/app/libs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = shimeng.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/mengshi/Documents/project/ffmpeg-project/demo/app/app/include";
 			};
 			name = Debug;
 		};
@@ -287,17 +404,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJRUY98YQG;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/app/libs",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = shimeng.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/mengshi/Documents/project/ffmpeg-project/demo/app/app/include";
 			};
 			name = Release;
 		};
